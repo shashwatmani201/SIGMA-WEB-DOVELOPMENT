@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+            background-color: black;
+        }
+        p{
+            text-shadow: 15px 6px 7px yellow;
+            color: red;
+        }
+        .box{
+            height: 10vh;
+            width: 10vw;
+            background-color: yellowgreen;
+            margin: 10px;
+            padding: auto;
+            overflow: auto;
+        }
+        .hero{
+            margin: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        @media screen and (orientation: landscape){
+            *{
+                background-color: aqua;
+            }
+        }
+        @media only screen and (max-width: 455px){
+            *{
+                background-color: white;
+            }
+            .hero{
+                flex-direction: column;
+                overflow: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam asperiores nostrum blanditiis doloribus,
+        perspiciatis quaerat, accusamus quod ipsam cum eligendi, modi ipsa. Aliquid cupiditate rem minus, iure deleniti
+        reiciendis odit.
+        Accusamus qui nam quos soluta, dolores reiciendis vel odio praesentium beatae officia! Ea corrupti minima
+        rat repudiandae accusamus neque tenetur sapiente veritatis eos mollitia! Velit,
+        molestiae fugiat? Labore atque similique incidunt dolorum maiores illo quasi, nostrum enim, cumque consequatur
+        veniam vel libero.</p>
+        <div class="hero">
+            <div class="box1 box">shashwat</div>
+            <div class="box2 box">shashwat</div>
+            <div class="box3 box">shashwat</div>
+            <div class="box4 box">shashwat</div>
+        </div>
+</body>
+
+</html>

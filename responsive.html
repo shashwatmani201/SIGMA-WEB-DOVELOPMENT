@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .hero {
+            height: 80px;
+            width: 250px;
+            border: 2px solid black;
+            margin: 50px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .logo{
+            width:72%;
+            /* background-color: aqua; */
+            border-radius: 12px;
+            /* overflow: hidden; */
+            height: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .follow{
+            width: 25%;
+            /* background-color: yellow; */
+            border-radius: 12px;
+            /* overflow: hidden; */
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+           background-color: skyblue;
+           height: 40%;
+           width: 90%;
+           border-radius: 12px;
+           box-shadow: 5px 5px 10px rgb(112, 135, 144);
+        }
+        .pic {
+            height: 90%;
+            width: 40%;
+            margin: auto;
+            margin-top: 4px;
+            /* background-color: aqua; */
+            border-radius: 50%;
+            background-image:url(smt.jpg) ;
+            background-size: cover; /* Options: cover, contain, etc. */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent tiling */
+        }
+
+        .info {
+            margin: auto;
+            margin-top: 10PX;
+            height: 100%;
+            width: 40%;
+        }
+        @media only screen and (max-width: 1208px){
+            .hero{
+                height: 195px;
+                width: 90px;
+                flex-direction: column;
+                overflow: auto;
+                margin: 10px;
+            }
+        .logo{
+            width:90%;
+            height: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .follow{
+            width: 70%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+        }
+        .pic {
+            height: 100%;
+            width: 90%;
+            margin: auto;
+            margin-top: 4px;
+        }
+        .info {
+            margin-left: 18px;
+            margin-top: 10PX;
+            height: 100%;
+            width: 40%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="logo">
+            <div class="pic"></div>
+            <div class="info">
+                <h4>NAME</h4>
+                <h6>sicribe</h6>
+                <h6>sicribe</h6>
+                <h6>sicribe</h6>
+            </div>
+        </div>
+        <div class="follow">
+            <button id="smt">follow</button> 
+        </div>
+    </div>
+</body>
+
+</html>
